@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
+import 'screens/opening_screen.dart';
+
 // import 'screens/opening_screen.dart';
 void main() {
   runApp( QuizApp());
@@ -13,7 +14,7 @@ class QuizApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: OpeningScreen(),
     );
   }
 }

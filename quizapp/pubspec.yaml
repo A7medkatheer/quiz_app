@@ -1,4 +1,4 @@
-name: quizapp0
+name: quizapp
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -78,11 +78,14 @@ flutter:
     - family: Pacifico
       fonts:
         - asset: font/Pacifico-Regular.ttf
-        # - asset: fonts/Schyler-Italic.ttf
+        
           style: italic
     - family: DancingScript
       fonts:
         - asset: font/DancingScript-VariableFont_wght.ttf
+    - family: Actor
+      fonts:
+        - asset: font/Actor-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
