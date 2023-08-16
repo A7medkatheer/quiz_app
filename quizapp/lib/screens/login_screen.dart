@@ -97,31 +97,28 @@ class LoginScreen extends StatelessWidget {
                         height: MediaQuery.of(context).size.height * 0.05,
                         width: MediaQuery.of(context).size.width * 0.4,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute<void>(
+                                builder: (BuildContext context) =>
+                                    const CategoryScreen(),
+                              ),
+                            );
+                          },
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.blue,
+                            backgroundColor: Colors.green,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
                           ),
-                          child: ElevatedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute<void>(
-                                  builder: (BuildContext context) =>
-                                      const CategoryScreen(),
-                                ),
-                              );
-                            },
-                            child: const Center(
-                              child: Text(
-                                'Login',
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
-                              ),
+                          child: const Center(
+                            child: Text(
+                              'Login',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
                         ),
@@ -153,7 +150,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                           TextButton(
                               onPressed: () {},
-                              child: Text(
+                              child: const Text(
                                 "Forgot Password?",
                                 style: TextStyle(color: Colors.green),
                               ))

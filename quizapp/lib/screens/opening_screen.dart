@@ -10,9 +10,9 @@ class OpeningScreen extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-        ),
+        // appBar: AppBar(
+        //   backgroundColor: Colors.black,
+        // ),
         body: Stack(
           children: [
             Image.asset(
@@ -47,7 +47,7 @@ class OpeningScreen extends StatelessWidget {
                     'We Are Creative, enjoy our App ',
                     style: TextStyle(
                         fontFamily: "DancingScript",
-                        fontSize: 23,
+                        fontSize: 30,
                         fontWeight: FontWeight.normal,
                         color: Colors.white),
                   ),
@@ -57,11 +57,10 @@ class OpeningScreen extends StatelessWidget {
           ],
         ),
         floatingActionButton: Container(
-          margin: EdgeInsets.symmetric(horizontal: 12, vertical: 20),
+          margin: EdgeInsets.only(right: 5, left: 37),
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () {
-              // الكود الذي تريد تنفيذه عند الضغط على الزرار هنا
               Navigator.push(
                 context,
                 MaterialPageRoute<void>(
@@ -70,8 +69,8 @@ class OpeningScreen extends StatelessWidget {
               );
             },
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(
-                  Color(0xFF4CAF50)), // تعيين لون الخلفية للزرار
+              backgroundColor:
+                  MaterialStateProperty.all<Color>(const Color(0xFF4CAF50)),
             ),
             child: const Text("Start"),
           ),
