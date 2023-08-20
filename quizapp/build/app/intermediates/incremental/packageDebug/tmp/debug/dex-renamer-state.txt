@@ -1,0 +1,4 @@
+#Mon Aug 21 00:37:27 EET 2023
+base.0=C\:\\Users\\AHMED\\Desktop\\tasks\\quizapp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
